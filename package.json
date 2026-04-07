@@ -10,8 +10,8 @@
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
     "report": "playwright show-report",
-    "allure:generate": "allure generate ./allure-results --clean",
-    "allure:open": "allure open"
+    "allure:generate": "allure-commandline generate ./allure-results --clean -o allure-report",
+    "allure:open": "allure-commandline open allure-report"
   },
   "keywords": [
     "playwright",
@@ -25,6 +25,7 @@
   "devDependencies": {
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.5.2",
+    "allure-commandline": "^2.38.1",
     "allure-playwright": "^3.6.0",
     "typescript": "^5.9.3"
   },
