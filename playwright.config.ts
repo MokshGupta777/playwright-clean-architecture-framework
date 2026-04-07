@@ -12,8 +12,17 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 2 : undefined,
   reporter: process.env.CI
-    ? [['github'], ['html', { open: 'never' }], ['list']]
-    : [['html', { open: 'never' }], ['list']],
+    ? [
+        ['github'],
+        ['html', { open: 'never' }],
+        ['list'],
+        ['allure-playwright'],
+      ]
+    : [
+        ['html', { open: 'never' }],
+        ['list'],
+        ['allure-playwright'],
+      ],
   use: {
     baseURL: env.baseUrl,
     trace: 'on-first-retry',
