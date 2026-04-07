@@ -10,7 +10,7 @@ export class LoginPage {
   readonly logoutButton: Locator;
   readonly loggedInLabel: Locator;
   readonly loginError: Locator;
-
+ 
   constructor(private readonly page: Page) {
     this.loginHeading = page.locator('h2', { hasText: messages.loginPageHeading });
     this.emailInput = page.locator('input[data-qa="login-email"]');
