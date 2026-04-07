@@ -1,0 +1,31 @@
+{
+  "name": "pw-project",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Playwright + TypeScript UI automation framework with layered architecture and GitHub Actions CI",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "qa",
+    "automation",
+    "clean-architecture"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.1"
+  }
+}
