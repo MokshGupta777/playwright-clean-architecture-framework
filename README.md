@@ -24,3 +24,11 @@ Playwright + TypeScript automation framework using clean architecture, page obje
 npm install
 npx playwright install
 npm run test:ui
+
+## Reports
+
+This framework generates:
+- Playwright HTML Report
+- Allure Report
+
+Both reports are uploaded as GitHub Actions artifacts after every workflow run.
